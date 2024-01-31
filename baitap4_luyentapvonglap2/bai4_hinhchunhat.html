@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  let data =""
+  for (i=0; i<10; i++){
+    for (j=0; j<40;j++){
+      if (i==0 || j==0 || i==9 || j==39){
+        data += "*"
+      } else {
+        data += "&ensp;"
+      }
+    }
+    data += "<br>"
+  }
+  document.write(data)
+</script>
