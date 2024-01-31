@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    // cach 1
+    let data = ""
+    for (i=0; i<6; i++) {
+        for (j=0; j<=i; j++) {
+            data += "*"
+        }
+        data += "<br>"
+    }
+    document.write(data)
+
+    //cach 2
+    let data2 = ""
+    for (i=0; i<6; i++) {
+        for (j=5; j>=i; j--) {
+            data2 += "*"
+        }
+        data2 += "<br>"
+    }
+    document.write(data2)
+
+    // hinh 3 (ket hop hinh 2 +1)
+    let data3 = ""
+    for (i=0; i<6; i++) {
+        for (j=5; j>i; j--) {
+            data3 += "*"
+        }
+        for (k=0; k<=i; k++) {
+            data3 += "0"
+        }
+        data3 += "<br>"
+    }
+    document.write(data3)
+
+    // hinh 4 (ket hop hinh 1 + 2)
+    let data4 = ""
+    for (i=0; i<6; i++) {
+        for (j=0; j<i; j++) {
+            data4 += "0"
+        }
+        for (k=5; k>=i; k--) {
+            data4 += "*"
+        }
+        data4 += "<br>"
+    }
+    document.write(data4)
+
+</script>
