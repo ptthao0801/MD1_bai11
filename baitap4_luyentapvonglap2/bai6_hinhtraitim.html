@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    // hình 1
+    let data =""
+    for (let i=2; i<5; i++){
+        for (j=4; j>i; j--) {
+            data += "&emsp;"
+        }
+        for (j=0;j<i;j++){
+            data+="*****"
+        }
+
+        for (j=4; j>i; j--) {
+            data += "&emsp;&emsp;&emsp;"
+        }
+        for (j=0;j<i;j++){
+            data+="*****"
+        }
+        data+="<br>"
+    }
+// hình giữa
+    let data3 = ""
+    for (let i=0; i<5; i++){
+        for (j=0; j<5; j++){
+            data3 += "*"
+        }
+        data3 += "<br>"
+    }
+    document.write(data3)
+
+// hình 2
+
+    for (let i=0; i<5; i++){
+        for (j=0; j<i; j++) {
+            data += "&emsp;&emsp;"
+        }
+        for (j=5;j>i;j--){            data+="****"
+        }
+        for (j=5;j>i;j--){
+            data+="****"
+        }
+        data+="<br>"
+    }
+    document.write(data)
+
+    // hình 3
+    let data2 =""
+    for (let i=2; i<5; i++){
+        for (j=4; j>i; j--) {
+            data2 += "&emsp;"
+        }
+        for (j=0;j<i;j++){
+            data2+="*****"
+        }
+        data2+="<br>"
+    }
+
+    // hình 4
+
+    for (let i=0; i<5; i++){
+        for (j=0; j<i; j++) {
+            data2 += "0000"
+        }
+        for (j=5;j>i;j--){
+            data2+="****"
+        }
+        data2+="<br>"
+    }
+    document.write(data2)
+
+    // ghép
+
+
+
+</script>

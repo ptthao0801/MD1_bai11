@@ -5,20 +5,40 @@
     <title>Title</title>
 </head>
 <body>
-
+<p id="print1"></p>
+<p id="print2"></p>
 </body>
 </html>
 <script>
-    let num = prompt("Nhập số lượng số nguyên tố cần in")
+    //check xem co phai snt ko
+
+function checksnt(num) {
     let count = 0
-    let n = 2
-    function nguyento(a){
-        while (count<num) {
-            if ()
+    for (let i=1; i<=num; i++) {
+        if (num%i==0){
+            count +=1
+        }
+    }
+    // document.getElementById("print1").innerHTML = "count là "+count
+    if (count==2){
+        // document.getElementById("print2").innerHTML = "Đây là số nguyên tố"
+        return true
+    } else {
+        // document.getElementById("print2").innerHTML = "Đây KHÔNG là số nguyên tố"
+        return false
+    }
+}
+
+let input = prompt("Nhập số lượng SNT cần in ra")
+let countSNT=0
+    for (let i=2; ; i++){
+        if (checksnt(i)==true){
+            document.write(i + " la SNT thu " + (countSNT + 1) + "<br>")
+            countSNT+=1
+        }
+        if (countSNT==input){
+            break
         }
     }
 
-    function print() {
-
-    }
 </script>

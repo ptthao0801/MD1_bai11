@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<button onclick="checksnt()" type="submit">Check snt</button>-->
+<p id="print1"></p>
+<p id="print2"></p>
+</body>
+</html>
+<script>
+    //check 5 xem co phai snt ko
+    // let num = prompt("check snt")
+    // let count = 0
+    // function checksnt(num) {
+    //     let count = 0;
+    //     for (let i = 1; i <= num; i++) {
+    //         if (num % i === 0) {
+    //             count ++;
+    //         }
+    //     }
+    //     if (count === 2) {
+    //         document.write(num)
+    //     }
+    //     else {
+    //         document.write(" Không là SNT")
+    //     }
+    // }
+    //
+    // checksnt(4)
+
+
+
+    // chạy từ 1 -> 5
+    // for (i=1; i<6; i++) {
+    //     console.log(i)
+    // }
+
+
+    // Bài toan 2 : In ra N SNT
+    function checksnt(num) {
+        let count = 0;
+        if(num < 2 ){
+            return false;
+        }
+        for (let i = 1; i <= num; i++) {
+            if (num % i === 0) {
+                count ++;
+            }
+        }
+        if (count === 2) {
+          return true
+        }
+        else {
+          return false;
+        }
+    }
+
+    let input = +prompt("Nhap so luong SNT : ")
+    let countSNT = 0;
+    for (let i = 2;  ; i++) {
+        if(checksnt(i) === true){
+            document.write(i + " la SNT thu " + (countSNT + 1) + "<br>");
+            countSNT++
+        }
+       if(countSNT === input){
+           break;
+       }
+
+    }
+
+</script>
